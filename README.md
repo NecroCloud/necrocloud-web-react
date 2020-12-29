@@ -1,8 +1,5 @@
 <img align="left" src="https://me.tsukidev.de/lEfTVBmXuD.png"  height="150"></img>
 
-</br>
-
-# NecroStudios Homepage
 
 This is a private homepage for NecroStudios. It was developed in 2020 with react by our Team. The unlicensend use is prohibited.
 
