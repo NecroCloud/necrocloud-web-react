@@ -1,0 +1,17 @@
+.necro-slider {
+    height: 800px;
+}
+
+@media only screen and (max-width: 600px) {
+    .necro-slider {
+        height: 320px
+    }
+}
+
+.bg-frostbite {
+    background-image: url("https://me.tsukidev.de/1vxJEIr2kX.jpg");
+}
+
+.bg-invertedSouls {
+    background-image: url("https://me.tsukidev.de/WnkEFduoP0.png");
+}
