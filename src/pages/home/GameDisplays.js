@@ -11,7 +11,7 @@ import React from 'react'
 
 // import pictures
 import gamePlay1 from '../../img/studios/games/frostBite/gamePlay1.jpg'
-import gamePlay2 from '../../img/studios/games/frostBite/gameplay2.jpg'
+import gamePlay2 from '../../img/studios/games/invertedSouls/ly4+sS.png'
 
 function GameDisplays(){
     return (

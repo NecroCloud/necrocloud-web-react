@@ -13,7 +13,7 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 import '../../css/slider.css'
 
 // Import pictures
-import logoLight from '../../img/studios/studiosLight.png'
+import frostbiteLogo from '../../img/studios/games/frostBite/frostbitelogo.png'
 import invertedSoulsLogo from '../../img/studios/games/invertedSouls/logoLight.png'
 
 // Options for Splider
@@ -38,10 +38,8 @@ function Splider() {
     return (
         <Splide options={options}>
             <SplideSlide className="bg-cover bg-frostbite necro-slider">
-                <img className="mx-auto mt-10 md:mt-28 max-h-32 md:max-h-80"
-                     src={logoLight}
-                     alt="" />
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center hidden md:shown">
+                <img className="mx-auto mt-10 md:mt-24 max-h-32 md:max-h-80" src={frostbiteLogo} alt="" />
+                <div className="mt-5 sm:mt-0 sm:flex sm:justify-center hidden md:shown">
                     <div className="rounded-md shadow">
                         <a href="#"
                            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
