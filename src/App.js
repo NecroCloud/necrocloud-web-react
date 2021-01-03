@@ -23,6 +23,7 @@ import Footer from "./components/footer/Footer"
 import Home from "./pages/home/Home";
 import Team from "./pages/team/Team";
 import Games from "./pages/games/Games";
+import DevBlog from "./pages/devBlog/DevBlog";
 
 // Begin main APP component
 // Routing included. Create a new route with:
@@ -41,6 +42,9 @@ function App() {
 
                 <div style={{minHeight: 63 + "vh"}}>
                     <Switch>
+                        <Route path="/devblog">
+                            <DevBlog/>
+                        </Route>
                         <Route path="/games">
                             <Games/>
                         </Route>

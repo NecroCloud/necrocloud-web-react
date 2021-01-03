@@ -10,11 +10,13 @@
 import React from 'react'
 import {Component} from 'react'
 
+import TopBanner from "../../components/sections/TopBanner";
+
 class Games extends Component {
     render() {
         return (
             <div>
-                This is the Games page
+                <TopBanner headLine="Our Games" description="Play what you love!" />
             </div>
         );
     }

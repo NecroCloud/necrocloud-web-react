@@ -42,7 +42,7 @@ function Navbar(){
 
 
                     <NavbarLink text={"Home"} link={"/"} />
-                    <NavbarLink text={"Store"} link={"/games"} />
+                    <NavbarLink text={"Blog"} link={"/devblog"} />
                     <NavbarLink text={"Team"} link={"/team"} />
 
                     <GamesDropdown />
@@ -74,7 +74,7 @@ function Navbar(){
                         <nav className="grid gap-y-8">
 
                             <MobileLink text={"Home"} link={"/"} />
-                            <MobileLink text={"Store"} link={"/games"} />
+                            <MobileLink text={"Blog"} link={"/devblog"} />
                             <MobileLink text={"Team"} link={"/team"} />
 
                         </nav>
