@@ -16,7 +16,6 @@ import reportWebVitals from './reportWebVitals';
 // Main is used for importing Tailwind and animate is
 // our animation library of choice
 import './css/main.css';
-import './css/animate.css'
 
 // ReactDOM renderer
 ReactDOM.render(

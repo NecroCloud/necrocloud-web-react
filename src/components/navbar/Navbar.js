@@ -12,8 +12,8 @@ import { RiMenu5Fill } from 'react-icons/ri'
 import { AiOutlineClose } from 'react-icons/ai'
 
 // Import Media
-import logoLight from '../../img/studios/studiosLight.png'
-import logoDark from '../../img/studios/studiosDark.png'
+import logoLight from '../../img/cloud/cloudLight.png'
+import logoDark from '../../img/cloud/cloudDark.png'
 
 // Import Components
 import NavbarLink from "./NavbarLink";
@@ -41,9 +41,10 @@ function Navbar(){
                 <nav className="hidden md:flex space-x-10">
 
 
-                    <NavbarLink text={"Home"} link={"/"} />
-                    <NavbarLink text={"Blog"} link={"/devblog"} />
+                    <NavbarLink text={"Start"} link={"/"} />
+                    <NavbarLink text={"Portfolio"} link={"/portfolio"} />
                     <NavbarLink text={"Team"} link={"/team"} />
+                    <NavbarLink text={"Kontakt"} link={"/contact"} />
 
                     <GamesDropdown />
 

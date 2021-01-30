@@ -16,7 +16,7 @@ class Team extends Component {
     render() {
         return (
             <div>
-                <TopBanner headLine="Our Team" description="Get to know who makes your games!" />
+                <TopBanner headLine="Our Team" description="Get to know who makes your games!" class="necro-invertedSouls-bg"/>
             </div>
         );
     }

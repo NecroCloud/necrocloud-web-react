@@ -37,6 +37,7 @@ function Announcement(props) {
                             {props.info.btnText}
                         </a>
                     </div>
+                    {/*
                     <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
                         <button onClick={() => hideAnnouncement(!showAnnouncement)} type="button"
                                 className="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
@@ -48,6 +49,7 @@ function Announcement(props) {
 
                         </button>
                     </div>
+                    */}
                 </div>
             </div>
         </div>

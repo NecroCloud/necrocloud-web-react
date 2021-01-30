@@ -15,6 +15,7 @@ import '../../css/slider.css'
 // Import pictures
 import frostbiteLogo from '../../img/studios/games/frostBite/frostbitelogo.png'
 import invertedSoulsLogo from '../../img/studios/games/invertedSouls/logoLight.png'
+import cloudLogo from '../../img/cloud/cloudLight.png'
 
 // Options for Splider
 // See more options here: https://splidejs.com/options/
@@ -37,6 +38,9 @@ const options = {
 function Splider() {
     return (
         <Splide options={options}>
+            <SplideSlide className="bg-cover bg-cloud necro-slider">
+                <img className="mx-auto mt-10 md:mt-36 max-h-32 md:max-h-80" src={cloudLogo} alt="" />
+            </SplideSlide>
             <SplideSlide className="bg-cover bg-frostbite necro-slider">
                 <img className="mx-auto mt-10 md:mt-24 max-h-32 md:max-h-80" src={frostbiteLogo} alt="" />
                 <div className="mt-5 sm:mt-0 sm:flex sm:justify-center hidden md:shown">

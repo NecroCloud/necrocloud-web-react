@@ -12,5 +12,7 @@ module.exports = {
       display: ['dark', 'hover', 'focus']
     },
   },
-  plugins: [],
+  plugins: [
+      require('@tailwindcss/forms'),
+  ],
 }

@@ -24,6 +24,8 @@ import Home from "./pages/home/Home";
 import Team from "./pages/team/Team";
 import Games from "./pages/games/Games";
 import DevBlog from "./pages/devBlog/DevBlog";
+import Login from "./pages/auth/login";
+import Contact from "./pages/contact/Contact";
 
 // Begin main APP component
 // Routing included. Create a new route with:
@@ -34,22 +36,31 @@ function App() {
             <div>
                 <Navbar/>
                 <Announcement info={{
-                    titleMobile: "frostbite: out now!",
-                    titleDesktop: "We just released our first game: Inverted Souls! Check it out.",
-                    btnText: "Free Download",
+                    titleMobile: "Hallo!",
+                    titleDesktop: "Sie brauchen erfahrene Entwickler für ihr Startup? Kontakiere uns jetzt!",
+                    btnText: "Kontakt aufnhemen.",
                     btnLink: "https://google.de"
                 }}/>
 
-                <div style={{minHeight: 63 + "vh"}}>
+                <div style={{minHeight: 73.4 + "vh"}}>
                     <Switch>
-                        <Route path="/devblog">
+                        <Route path="/portfolio">
                             <DevBlog/>
                         </Route>
                         <Route path="/games">
                             <Games/>
                         </Route>
+                        <Route path="/contact">
+                            <Contact/>
+                        </Route>
                         <Route path="/team">
                             <Team/>
+                        </Route>
+                        <Route path="/login">
+                            <Login />
+                        </Route>
+                        <Route path="/impressum">
+                            <Login />
                         </Route>
                         <Route path="/">
                             <Home/>
