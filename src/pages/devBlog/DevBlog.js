@@ -8,14 +8,15 @@
 // Imports
 import React from 'react'
 import {Component} from 'react'
-import axios from 'axios'
+import API from "../../api/API";
 
+// Import components
 import TopBanner from "../../components/sections/TopBanner";
 import BlogPost from "./ext/BlogPost";
-import Popup from "./ext/Popup";
 
 class DevBlog extends Component {
 
+    // Constructor and creation of state
     constructor(props) {
         super(props);
         this.state = {
@@ -23,8 +24,10 @@ class DevBlog extends Component {
         }
     }
 
+    // Get the data from the API
     componentDidMount() {
-        axios.get(`https://api.necrocloud.eu/portfolio/all`).then((response) => {
+
+        API.get(`portfolio/all`).then((response) => {
             this.setState({
                 posts: response.data
             })
@@ -34,16 +37,15 @@ class DevBlog extends Component {
     render() {
         return (
             <div>
-                <TopBanner headLine="Portfolio" description="Check out all of our previous work!" class="necro-code-bg"/>
-                <div className="grid grid-cols-2 gap-4 container mt-6">
+                <TopBanner headLine="Portfolio" description="Check out all of our previous work!"
+                           class="necro-code-bg"/>
+                <div className="grid lg:grid-cols-2 gap-4 grid-cols-1 container mt-6">
                     {this.state.posts.map((value, index) => {
                         return (
                             <BlogPost info={value}/>
                         )
                     })}
                 </div>
-
-                <Popup />
             </div>
         );
     }

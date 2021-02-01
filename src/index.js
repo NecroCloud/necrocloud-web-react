@@ -1,4 +1,3 @@
-
 // --------------------------------------------------
 //                   Necro Studios
 //                 Developed in 2020
@@ -9,8 +8,8 @@
 // Imports
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 // CSS Imports
 // Main is used for importing Tailwind and animate is
@@ -19,10 +18,10 @@ import './css/main.css';
 
 // ReactDOM renderer
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

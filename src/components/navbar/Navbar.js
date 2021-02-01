@@ -44,7 +44,6 @@ function Navbar(){
                     <NavbarLink text={"Start"} link={"/"} />
                     <NavbarLink text={"Portfolio"} link={"/portfolio"} />
                     <NavbarLink text={"Team"} link={"/team"} />
-                    <NavbarLink text={"Kontakt"} link={"/contact"} />
 
                     <GamesDropdown />
 
@@ -62,7 +61,13 @@ function Navbar(){
                 <div className="pt-5 pb-6 px-5">
                     <div className="flex items-center justify-between">
                         <div>
-                            <img className="h-8 w-auto" src={logoDark} alt="Logo" />
+                            <span className="hidden dark:block">
+                                <img className="h-8 w-auto" src={logoLight} alt="Logo" />
+                            </span>
+
+                            <span className="dark:hidden">
+                                <img className="h-8 w-auto" src={logoDark} alt="Logo" />
+                            </span>
                         </div>
                         <div className="-mr-2">
                             <button onClick={() => setMenuOpen(!menuOpen)} type="button" className="text-2xl bg-white dark:bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -74,8 +79,8 @@ function Navbar(){
                     <div className="mt-6">
                         <nav className="grid gap-y-8">
 
-                            <MobileLink text={"Home"} link={"/"} />
-                            <MobileLink text={"Blog"} link={"/devblog"} />
+                            <MobileLink text={"Start"} link={"/"} />
+                            <MobileLink text={"Portfolio"} link={"/portfolio"} />
                             <MobileLink text={"Team"} link={"/team"} />
 
                         </nav>

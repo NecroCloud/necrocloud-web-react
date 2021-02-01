@@ -24,11 +24,47 @@
     }
 }
 
+.gradient-bg .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: lightgray;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
 .gradient-bg div{
     position: absolute;
     top: 320px;
     left: 25px;
 }
+
+@media only screen and (max-width: 770px) {
+    .gradient-bg div {
+        top: 250px;
+    }
+}
+
+@media only screen and (max-width: 642px) {
+    .gradient-bg div {
+        top: 175px;
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .gradient-bg div {
+        top: 110px;
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .gradient-bg div {
+        display: none;
+    }
+}
+
 .gradient-bg img{
     position:relative;
     z-index:-1;

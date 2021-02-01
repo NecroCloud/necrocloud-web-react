@@ -16,6 +16,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Announcement from "./components/announcement/Annoucement";
 import Footer from "./components/footer/Footer"
+import ContactPopup from "./components/popups/ContactPopup";
 
 // Page Importing
 // This is used for importing our pages we want to render
@@ -25,21 +26,19 @@ import Team from "./pages/team/Team";
 import Games from "./pages/games/Games";
 import DevBlog from "./pages/devBlog/DevBlog";
 import Login from "./pages/auth/login";
-import Contact from "./pages/contact/Contact";
 
 // Begin main APP component
 // Routing included. Create a new route with:
 // <Route path="/PATH"> LOAD PAGE HERE </Route>
 function App() {
     return (
-        <Router>
+            <Router>
             <div>
                 <Navbar/>
                 <Announcement info={{
                     titleMobile: "Hallo!",
                     titleDesktop: "Sie brauchen erfahrene Entwickler für ihr Startup? Kontakiere uns jetzt!",
-                    btnText: "Kontakt aufnhemen.",
-                    btnLink: "https://google.de"
+                    btnText: <ContactPopup text="Kontakt aufnehmen"/>,
                 }}/>
 
                 <div style={{minHeight: 73.4 + "vh"}}>
@@ -49,9 +48,6 @@ function App() {
                         </Route>
                         <Route path="/games">
                             <Games/>
-                        </Route>
-                        <Route path="/contact">
-                            <Contact/>
                         </Route>
                         <Route path="/team">
                             <Team/>

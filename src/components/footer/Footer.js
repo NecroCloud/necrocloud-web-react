@@ -8,6 +8,7 @@
 
 // imports
 import React from 'react'
+import ContactPopup from "../popups/ContactPopup";
 
 function Footer() {
 
@@ -24,8 +25,9 @@ function Footer() {
                                    className="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Home</a>
                                 <a href="#"
                                    className="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Devblog</a>
-                                <a href="#"
-                                   className="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Contact</a>
+                                <a href="#" className="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">
+                                    <ContactPopup text="Contact" />
+                                </a>
                                 <a href="#"
                                    className="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Legal</a>
                             </div>
