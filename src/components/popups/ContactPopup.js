@@ -12,6 +12,7 @@ import {useState} from 'react'
 import '../../css/popup.css'
 import API from "../../api/API";
 import {Checkmark} from 'react-checkmark'
+import {CgClose} from "react-icons/cg";
 
 
 // Begin creating the component
@@ -98,6 +99,9 @@ function ContactPopup(props) {
 
                                 <div className="gradient-bg">
                                     <img alt="" src="https://me.tsukidev.de/1vxJEIr2kX.jpg"/>
+                                    <span onClick={() => setIsOpen(false)} className="close">
+                                        <CgClose className="transform duration-500 ease-in-out hover:scale-110 hover:rotate-180" />
+                                    </span>
                                     <div className="px-4">
                                         <br/>
                                         <span

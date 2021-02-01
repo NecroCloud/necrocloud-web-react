@@ -30,6 +30,26 @@ let BlogPost = (props) => {
         }
     }
 
+
+    function projectText(){
+        if (props.info.text === ""){
+
+            return (
+                <>
+                    Zu diesem Projekt wurde noch kein DevBlog geschrieben.<br />
+                    Bei Intresse können Sie den zuständigen Entwickler unter Kontakt für mehr Auskunft bitten.
+                </>
+            )
+        }
+        else {
+            return (
+                <>
+                    {props.info.text}
+                </>
+            )
+        }
+    }
+
     return (
         <div>
             <div onClick={() => togglePopup(true)}
@@ -43,8 +63,11 @@ let BlogPost = (props) => {
                             className="text-blue-600 dark:text-blue-400 text-xs font-medium uppercase">{props.info.keyword}</span>
                         <a href="#"
                            className="block text-gray-800 dark:text-white font-semibold text-2xl mt-2 hover:no-underline hover:text-gray-600 dark:hover:text-gray-200 hover:underline">
-                            {props.info.title}</a>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 max-h-24 overflow-hidden">{props.info.text}</p>
+                            {props.info.title}
+                        </a>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 max-h-24 overflow-hidden new-line">
+                            {projectText()}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -98,7 +121,7 @@ let BlogPost = (props) => {
 
                                 <div className="bg-gray-200 dark:bg-gray-700 px-11">
                                     <p className="text-lg text-gray-600 dark:text-gray-400 mt-2">
-                                        {props.info.text}
+                                        {projectText()}
                                     </p>
 
                                     <button
