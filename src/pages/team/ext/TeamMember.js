@@ -18,11 +18,11 @@ function TeamMember() {
             <div className="h-24 w-full m-0 bg-cover rounded-t rounded-t-xl bg-gradient-to-r from-blue-500 via-indigo-700 to-gray-80 dark:from-indigo-900 via-gray-800 to-gray-900">
             </div>
             <div className="h-14 w-full bg-white dark:bg-gray-700 relative p-4">
-                <img className="h-32 absolute z-0 profile-picture transform hover:scale-105 hover:rotate-6 duration-500 ease-in-out" src="https://me.tsukidev.de/HmzNiZGfe2.jpg" alt=""/>
+                <img className="h-32 absolute z-0 profile-picture transform hover:scale-105 hover:rotate-6 duration-500 ease-in-out" src="https://i.pinimg.com/236x/98/23/5d/98235d2cfa5aa34446c23182835adacd.jpg" alt=""/>
             </div>
             <div className="w-full bg-white dark:bg-gray-700 mt-0 p-0 text-center pb-8">
                 <h1 className="text-3xl pt-0 font-medium dark:text-gray-200">
-                    GamingPascal0
+                    Ben Kaiser
                 </h1>
                 <div className="mt-1">
                     <span className="py-0.5 pb-1 px-2 m-1 bg-blue-300 rounded text-white shadow-md font-light">PHP</span>

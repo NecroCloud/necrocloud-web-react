@@ -17,7 +17,7 @@ function GamesDropdown() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="relative">
+        <div className="relative" style={{zIndex: 10}}>
 
             <button onClick={() => setIsOpen(!isOpen)} type="button"
                     className="group inline-flex items-center text-base font-medium hover:text-white focus:outline-none text-white">

@@ -10,11 +10,13 @@
 }
 
 .necro-invertedSouls-bg {
-    background-image: url("https://me.tsukidev.de/WnkEFduoP0.png");
+    background-image: url("https://i.imgur.com/mtSOWNR.png");
 }
 
 .necro-code-bg {
-    background-image: url("https://me.tsukidev.de/j1VPsJXDl6.png");
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .necro-post:hover img {

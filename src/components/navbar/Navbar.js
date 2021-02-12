@@ -43,7 +43,7 @@ function Navbar(){
 
                     <NavbarLink text={"Start"} link={"/"} />
                     <NavbarLink text={"Portfolio"} link={"/portfolio"} />
-                    <NavbarLink text={"Team"} link={"/team"} />
+                    <NavbarLink text={"Services"} link={"/services"} />
 
                     <GamesDropdown />
 

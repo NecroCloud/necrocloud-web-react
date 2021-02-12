@@ -22,8 +22,7 @@ import ContactPopup from "./components/popups/ContactPopup";
 // This is used for importing our pages we want to render
 // for our users. Edit these in src/pages
 import Home from "./pages/home/Home";
-import Team from "./pages/team/Team";
-import Games from "./pages/games/Games";
+import Services from "./pages/services/services";
 import DevBlog from "./pages/devBlog/DevBlog";
 import Login from "./pages/auth/login";
 
@@ -46,16 +45,13 @@ function App() {
                         <Route path="/portfolio">
                             <DevBlog/>
                         </Route>
-                        <Route path="/games">
-                            <Games/>
-                        </Route>
-                        <Route path="/team">
-                            <Team/>
+                        <Route path="/services">
+                            <Services/>
                         </Route>
                         <Route path="/login">
                             <Login />
                         </Route>
-                        <Route path="/impressum">
+                        <Route path="/legal">
                             <Login />
                         </Route>
                         <Route path="/">
