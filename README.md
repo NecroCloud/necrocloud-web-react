@@ -1,35 +1,15 @@
-<img src="https://me.tsukidev.de/lEfTVBmXuD.png" width="250"></img>
-
-
 # NecroStudios Homepage
 
-This is a private homepage for NecroStudios. It was developed in 2020 with react by our Team. The unlicensend use is prohibited.
+This is a private homepage for NecroStudios. It was developed in 2020 with react by our Team.
+
+Want to see a preview of the project? https://imgur.com/a/Q8yrtSI
 
 ## Usage
 
-
 `yarn build`
-
-## Features
-
-* Routing System
-* Design
-
-## Installation 
-
-### Setup 
-
-1. Locate cloned repository.
-2. Open the project in your terminal
-3. build the project using `yarn build`
-4. copy the `build` folder onto your webserver
-5. Finished
-
 
 ## Contact
 **TsukiDev**
-- [Twitter](https://twitter.com/TsukiDev)
-- [Website](https://tsukidev.de)
 
 **Contributors**
 - ReaperMaga
